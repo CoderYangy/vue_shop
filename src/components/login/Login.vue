@@ -61,6 +61,7 @@
 				 
 				//  登陆成功后的token 保存到客户端 sessionStorage中
 				console.log(res);
+				window.sessionStorage.setItem('username', res.data.username)
 				window.sessionStorage.setItem('token', res.data.token)
 				this.$router.push('/home')
 				
